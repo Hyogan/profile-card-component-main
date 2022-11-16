@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
+    background: url("images/bg-pattern-top.svg");
+    background-color: hsl(185, 75%, 39%);    
+}
+
+.main-profile-card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 500px;
+    width: 450px;
+    border-radius: 4%;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+}
+.top-decoration-image {
+    display: block;
+    width: 100%;
+    height: 40%;
+    border-radius: 10% 10% 0 0;
+}
+
+
+.informations-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+
+
+.profile-image {
+    border-radius: 50%;
+    height: 140px;
+    width: 140px;
+    margin-top: -15%;
+    border: 7px solid hsl(0,0%,100%);
+    margin-bottom: 4%;
+}
+
+.name-age {
+    margin-bottom: 3%;
+    font-size: 20px;
+    color: hsl(229, 23%, 23%);
+    font-weight: 700;
+}
+.name-age:hover {
+    cursor: pointer;
+    color: hsl(253, 51%, 20%);
+    transition: all 3s;
+}
+.name-age span {
+    color: hsl(227, 10%, 46%);
+    margin-left: 10px;
+}
+
+.town {
+    color: hsl(227, 10%, 46%);
+}
+.stats-block ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    margin-left: 5%;
+    align-items: center;
+    max-width: 90%;
+    margin-bottom: 10%;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 22px;
+    color: hsl(229, 23%, 23%);
+    text-align: center;
+}
+
+.stats-block ul li span {color:  hsl(0, 0%, 59%);font-size: 12px; }
+hr {
+    margin-top: 10%;
+    margin-bottom: 7%;
+    color: hsla(0, 0%, 59%, 0.292);
+}
+.stats-block ul li:hover {
+    animation: rotation 5s;
+    cursor: pointer;
+    color: rgb(81, 81, 243);
+}
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width:380px)
+{
+    .profile-image {
+        margin-top: -23%;
+
+    }
+}
